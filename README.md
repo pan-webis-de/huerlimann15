@@ -3,11 +3,11 @@
 ## Example uses of `glad-main.py` ##
 In the following examples the following placeholders are used to have shorter commands (this assumes the PAN2014/15 datasets are downloaded):
 
-`$trainingDataset`:   `Data/SettingA/pan15-authorship-verification-training-dataset-2015-03-02/pan15-authorship-verification-training-dataset-english-2015-03-02`
+`$trainingDataset`:   `path/to/data/pan15-authorship-verification-training-dataset-english-2015-03-02`
 
-`$inputDataset`:   `Data/Setting0/pan14-author-verification-test-corpus2-english-both-2014-04-22`
+`$inputDataset`:   `path/to/data/pan14-author-verification-test-corpus2-english-both-2014-04-22`
 
-`$modelDir`:   `Models/example_model`
+`$modelDir`:   `path/to/models/example_model`
 
 ### Train a model ###
 
@@ -42,3 +42,11 @@ In the following examples the following placeholders are used to have shorter co
 
 `python3 glad-main.py -i $inputDataset -m $modelDir -a path/to/answers.file`
 > `-a` store the predictions to a file; alternative flag: `--answers`
+
+## Requirements ##
+
+- Python 3.x
+- NLTK 
+- NumPy
+- scikit-learn
+- (liac-arff)
